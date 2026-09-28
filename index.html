@@ -487,7 +487,7 @@
     .chart-tooltip[hidden] { display: none; }
     .heatmap-grid {
       display: grid;
-      grid-template-columns: minmax(118px, 1.45fr) repeat(4, minmax(50px, 1fr));
+      grid-template-columns: minmax(118px, 1.45fr) repeat(5, minmax(50px, 1fr));
       gap: 7px;
       align-items: stretch;
     }
@@ -568,7 +568,7 @@
       .log-tools { align-items: flex-start; flex-direction: column; gap: 10px; }
       .chart-panel { padding: 18px 14px; }
       .chart-panel-head { margin-bottom: 12px; }
-      .heatmap-grid { grid-template-columns: minmax(74px, 1.35fr) repeat(4, minmax(34px, 1fr)); gap: 5px; }
+      .heatmap-grid { grid-template-columns: minmax(74px, 1.35fr) repeat(5, minmax(30px, 1fr)); gap: 4px; }
       .heat-label { font-size: .68rem; }
       .heat-head { font-size: .61rem; }
       .heat-cell { min-height: 40px; }
@@ -611,7 +611,7 @@
         </div>
         <div class="summary-item wide">
           <span class="summary-label">Last checked</span>
-          <strong>28 Sep 2026</strong>
+          <strong>29 Sep 2026</strong>
           <span class="summary-time">Portal report · 28 Sep 2026, 00:30</span>
         </div>
       </div>
@@ -628,19 +628,19 @@
         <div class="snapshot-cover">
           <div>
             <span class="today-label">Latest attendance day</span>
-            <h3 style="margin:8px 0 0;font-size:1.35rem;">Saturday</h3>
-            <time datetime="2026-09-26">26 Sep 2026</time>
+            <h3 style="margin:8px 0 0;font-size:1.35rem;">Monday</h3>
+            <time datetime="2026-09-28">28 Sep 2026</time>
           </div>
-          <div class="snapshot-score" aria-label="3 present and 1 absent">
-            <div class="snapshot-count"><strong>3</strong><span>present</span></div>
-            <div class="snapshot-count"><strong>1</strong><span>absent</span></div>
+          <div class="snapshot-score" aria-label="4 present and 0 absent">
+            <div class="snapshot-count"><strong>4</strong><span>present</span></div>
+            <div class="snapshot-count"><strong>0</strong><span>absent</span></div>
           </div>
         </div>
         <div class="snapshot-sessions">
-          <div class="snapshot-session"><img class="attendance-badge" data-badge="present" alt="Present badge" /><div><strong>Wireless Communication</strong><span>Present</span></div></div>
-          <div class="snapshot-session"><img class="attendance-badge" data-badge="present" alt="Present badge" /><div><strong>DTSP</strong><span>Present</span></div></div>
-          <div class="snapshot-session"><img class="attendance-badge" data-badge="absent" alt="Absent badge" /><div><strong>Signals and Systems</strong><span>Absent</span></div></div>
           <div class="snapshot-session"><img class="attendance-badge" data-badge="present" alt="Present badge" /><div><strong>Control Systems</strong><span>Present</span></div></div>
+          <div class="snapshot-session"><img class="attendance-badge" data-badge="present" alt="Present badge" /><div><strong>Signals and Systems</strong><span>Present</span></div></div>
+          <div class="snapshot-session"><img class="attendance-badge" data-badge="present" alt="Present badge" /><div><strong>Discrete Time Signal Processing</strong><span>Present</span></div></div>
+          <div class="snapshot-session"><img class="attendance-badge" data-badge="present" alt="Present badge" /><div><strong>Wireless Communication</strong><span>Present</span></div></div>
         </div>
       </div>
     </section>
@@ -665,7 +665,7 @@
           <div class="bar-wrap"><div class="track"><div class="fill" style="width:16%"></div><span class="target-marker" aria-hidden="true"></span></div><div class="target-label"><span>0</span><strong>target 65</strong><span>100</span></div></div>
         </article>
         <article class="subject">
-          <div><h3 class="subject-name">DTSP</h3><p class="subject-meta">P 8 · A 5 · 47 points short</p></div>
+          <div><h3 class="subject-name">Discrete Time Signal Processing</h3><p class="subject-meta">P 8 · A 5 · 47 points short</p></div>
           <strong class="percentage low">18%</strong>
           <div class="bar-wrap"><div class="track"><div class="fill" style="width:18%"></div><span class="target-marker" aria-hidden="true"></span></div><div class="target-label"><span>0</span><strong>target 65</strong><span>100</span></div></div>
         </article>
@@ -719,7 +719,7 @@
       <div class="section-head">
         <div>
           <h2 id="trends-heading">Attendance trends</h2>
-          <p class="section-note">Cumulative percentages from the four logged dates, oldest to newest.</p>
+          <p class="section-note">Cumulative percentages from the five logged dates, oldest to newest.</p>
         </div>
         <p class="section-note">Theory subjects only</p>
       </div>
@@ -761,7 +761,7 @@
       <div class="section-head">
         <div>
           <h2 id="log-heading">Daily attendance log</h2>
-          <p class="section-note">12 present and 3 absent sessions across the latest four days.</p>
+          <p class="section-note">16 present and 3 absent sessions across the latest five days.</p>
         </div>
       </div>
       <div class="log-panel">
@@ -771,8 +771,18 @@
             <button class="filter" type="button" data-filter="present" aria-pressed="false">Present</button>
             <button class="filter" type="button" data-filter="absent" aria-pressed="false">Absent</button>
           </div>
-          <span class="log-count" aria-live="polite">15 sessions shown</span>
+          <span class="log-count" aria-live="polite">19 sessions shown</span>
         </div>
+        <article class="day" data-day>
+          <div class="day-head"><div class="date"><time datetime="2026-09-28">28 Sep 2026</time></div><div class="day-total">4 present · 0 absent</div></div>
+          <div class="entries">
+            <div class="entry-head" aria-hidden="true"><span>Photo</span><span>Subject</span><span>Status</span></div>
+            <span class="entry present" data-status="present"><img class="attendance-badge" data-badge="present" alt="Present badge" /><span class="entry-subject">Control Systems</span><span class="status-dot" aria-label="Present">P</span></span>
+            <span class="entry present" data-status="present"><img class="attendance-badge" data-badge="present" alt="Present badge" /><span class="entry-subject">Signals and Systems</span><span class="status-dot" aria-label="Present">P</span></span>
+            <span class="entry present" data-status="present" data-subject="DTSP"><img class="attendance-badge" data-badge="present" alt="Present badge" /><span class="entry-subject">Discrete Time Signal Processing</span><span class="status-dot" aria-label="Present">P</span></span>
+            <span class="entry present" data-status="present"><img class="attendance-badge" data-badge="present" alt="Present badge" /><span class="entry-subject">Wireless Communication</span><span class="status-dot" aria-label="Present">P</span></span>
+          </div>
+        </article>
         <article class="day" data-day>
           <div class="day-head"><div class="date"><time datetime="2026-09-26">26 Sep 2026</time></div><div class="day-total">3 present · 1 absent</div></div>
           <div class="entries">
@@ -888,6 +898,7 @@
       }
 
       function cleanSubjectName(entry) {
+        if (entry.hasAttribute('data-subject')) return entry.getAttribute('data-subject');
         var clone = entry.cloneNode(true);
         Array.prototype.slice.call(clone.querySelectorAll('.status-dot, .x2')).forEach(function (node) {
           node.remove();
