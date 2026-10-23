@@ -500,7 +500,7 @@
     .chart-tooltip[hidden] { display: none; }
     .heatmap-grid {
       display: grid;
-      grid-template-columns: minmax(84px, 1.3fr) repeat(13, minmax(0, 1fr));
+      grid-template-columns: minmax(84px, 1.3fr) repeat(14, minmax(0, 1fr));
       gap: 5px;
       align-items: stretch;
     }
@@ -581,7 +581,7 @@
       .log-tools { align-items: flex-start; flex-direction: column; gap: 10px; }
       .chart-panel { padding: 18px 14px; }
       .chart-panel-head { margin-bottom: 12px; }
-      .heatmap-grid { grid-template-columns: minmax(64px, 1.2fr) repeat(13, minmax(0, 1fr)); gap: 4px; }
+      .heatmap-grid { grid-template-columns: minmax(64px, 1.2fr) repeat(14, minmax(0, 1fr)); gap: 4px; }
       .heat-label { font-size: .68rem; }
       .heat-head { font-size: .61rem; }
       .heat-cell { min-height: 40px; }
@@ -641,18 +641,21 @@
         <div class="snapshot-cover">
           <div>
             <span class="today-label">Latest attendance day</span>
-            <h3 style="margin:8px 0 0;font-size:1.35rem;">Thursday</h3>
-            <time datetime="2026-10-22">22 Oct 2026</time>
+            <h3 style="margin:8px 0 0;font-size:1.35rem;">Friday</h3>
+            <time datetime="2026-10-23">23 Oct 2026</time>
           </div>
-          <div class="snapshot-score" aria-label="0 present and 3 absent">
-            <div class="snapshot-count"><strong>0</strong><span>present</span></div>
-            <div class="snapshot-count"><strong>3</strong><span>absent</span></div>
+          <div class="snapshot-score" aria-label="2 present and 4 absent">
+            <div class="snapshot-count"><strong>2</strong><span>present</span></div>
+            <div class="snapshot-count"><strong>4</strong><span>absent</span></div>
           </div>
         </div>
         <div class="snapshot-sessions">
-          <div class="snapshot-session"><img class="attendance-badge" data-badge="absent" alt="Absent badge" /><div><strong>DTSP</strong><span>Absent · HR6</span></div></div>
-          <div class="snapshot-session"><img class="attendance-badge" data-badge="absent" alt="Absent badge" /><div><strong>Wireless Communication</strong><span>Absent · HR7</span></div></div>
+          <div class="snapshot-session"><img class="attendance-badge" data-badge="absent" alt="Absent badge" /><div><strong>Control Systems</strong><span>Absent · HR2</span></div></div>
+          <div class="snapshot-session"><img class="attendance-badge" data-badge="absent" alt="Absent badge" /><div><strong>Control Systems</strong><span>Absent · HR3</span></div></div>
           <div class="snapshot-session"><img class="attendance-badge" data-badge="absent" alt="Absent badge" /><div><strong>Soft Computing</strong><span>Absent · HR8</span></div></div>
+          <div class="snapshot-session"><img class="attendance-badge" data-badge="present" alt="Present badge" /><div><strong>Signals and Systems</strong><span>Present · HR9</span></div></div>
+          <div class="snapshot-session"><img class="attendance-badge" data-badge="absent" alt="Absent badge" /><div><strong>DTSP</strong><span>Absent · HR12</span></div></div>
+          <div class="snapshot-session"><img class="attendance-badge" data-badge="present" alt="Present badge" /><div><strong>Wireless Communication</strong><span>Present · HR13</span></div></div>
         </div>
       </div>
     </section>
@@ -667,9 +670,9 @@
       </div>
       <div class="subjects">
         <article class="subject">
-          <div><h3 class="subject-name">Control Systems</h3><p class="subject-meta">10211EC105 · P 18 · A 8 · 25 points short</p></div>
-          <strong class="percentage low">40%</strong>
-          <div class="bar-wrap"><div class="track"><div class="fill" style="width:40%"></div><span class="target-marker" aria-hidden="true"></span></div><div class="target-label"><span>0</span><strong>target 65</strong><span>100</span></div></div>
+          <div><h3 class="subject-name">Control Systems</h3><p class="subject-meta">10211EC105 · P 19 · A 8 · 23 points short</p></div>
+          <strong class="percentage low">42%</strong>
+          <div class="bar-wrap"><div class="track"><div class="fill" style="width:42%"></div><span class="target-marker" aria-hidden="true"></span></div><div class="target-label"><span>0</span><strong>target 65</strong><span>100</span></div></div>
         </article>
         <article class="subject">
           <div><h3 class="subject-name">Signals and Systems</h3><p class="subject-meta">10211EC106 · P 12 · A 18 · 38 points short</p></div>
@@ -677,17 +680,17 @@
           <div class="bar-wrap"><div class="track"><div class="fill" style="width:27%"></div><span class="target-marker" aria-hidden="true"></span></div><div class="target-label"><span>0</span><strong>target 65</strong><span>100</span></div></div>
         </article>
         <article class="subject">
-          <div><h3 class="subject-name">Discrete Time Signal Processing</h3><p class="subject-meta">10211EC111 · P 12 · A 12 · 38 points short</p></div>
+          <div><h3 class="subject-name">Discrete Time Signal Processing</h3><p class="subject-meta">10211EC111 · P 12 · A 14 · 38 points short</p></div>
           <strong class="percentage low">27%</strong>
           <div class="bar-wrap"><div class="track"><div class="fill" style="width:27%"></div><span class="target-marker" aria-hidden="true"></span></div><div class="target-label"><span>0</span><strong>target 65</strong><span>100</span></div></div>
         </article>
         <article class="subject">
-          <div><h3 class="subject-name">Wireless Communication</h3><p class="subject-meta">10211EC112 · P 17 · A 11 · 27 points short</p></div>
-          <strong class="percentage low">38%</strong>
-          <div class="bar-wrap"><div class="track"><div class="fill" style="width:38%"></div><span class="target-marker" aria-hidden="true"></span></div><div class="target-label"><span>0</span><strong>target 65</strong><span>100</span></div></div>
+          <div><h3 class="subject-name">Wireless Communication</h3><p class="subject-meta">10211EC112 · P 18 · A 12 · 25 points short</p></div>
+          <strong class="percentage low">40%</strong>
+          <div class="bar-wrap"><div class="track"><div class="fill" style="width:40%"></div><span class="target-marker" aria-hidden="true"></span></div><div class="target-label"><span>0</span><strong>target 65</strong><span>100</span></div></div>
         </article>
         <article class="subject">
-          <div><h3 class="subject-name">Soft Computing</h3><p class="subject-meta">10212EC157 · P 16 · A 17 · 29 points short</p></div>
+          <div><h3 class="subject-name">Soft Computing</h3><p class="subject-meta">10212EC157 · P 16 · A 18 · 29 points short</p></div>
           <strong class="percentage low">36%</strong>
           <div class="bar-wrap"><div class="track"><div class="fill" style="width:36%"></div><span class="target-marker" aria-hidden="true"></span></div><div class="target-label"><span>0</span><strong>target 65</strong><span>100</span></div></div>
         </article>
@@ -731,7 +734,7 @@
       <div class="section-head">
         <div>
           <h2 id="trends-heading">Attendance trends</h2>
-          <p class="section-note">Cumulative percentages from the thirteen logged dates, oldest to newest.</p>
+          <p class="section-note">Cumulative percentages from the fourteen logged dates, oldest to newest.</p>
         </div>
         <p class="section-note">Theory subjects only</p>
       </div>
@@ -773,7 +776,7 @@
       <div class="section-head">
         <div>
           <h2 id="log-heading">Daily attendance log</h2>
-          <p class="section-note">30 present and 20 absent sessions across the latest thirteen days.</p>
+          <p class="section-note">32 present and 24 absent sessions across the latest fourteen days.</p>
         </div>
       </div>
       <div class="log-panel">
@@ -783,8 +786,20 @@
             <button class="filter" type="button" data-filter="present" aria-pressed="false">Present</button>
             <button class="filter" type="button" data-filter="absent" aria-pressed="false">Absent</button>
           </div>
-          <span class="log-count" aria-live="polite">50 sessions shown</span>
+          <span class="log-count" aria-live="polite">56 sessions shown</span>
         </div>
+        <article class="day" data-day>
+          <div class="day-head"><div class="date"><time datetime="2026-10-23">23 Oct 2026</time></div><div class="day-total">2 present · 4 absent</div></div>
+          <div class="entries">
+            <div class="entry-head" aria-hidden="true"><span>Photo</span><span>Subject · hour</span><span>Status</span></div>
+            <span class="entry absent" data-status="absent"><img class="attendance-badge" data-badge="absent" alt="Absent badge" /><span class="entry-subject">Control Systems <span class="x2">HR2</span></span><span class="status-dot" aria-label="Absent">A</span></span>
+            <span class="entry absent" data-status="absent"><img class="attendance-badge" data-badge="absent" alt="Absent badge" /><span class="entry-subject">Control Systems <span class="x2">HR3</span></span><span class="status-dot" aria-label="Absent">A</span></span>
+            <span class="entry absent" data-status="absent"><img class="attendance-badge" data-badge="absent" alt="Absent badge" /><span class="entry-subject">Soft Computing <span class="x2">HR8</span></span><span class="status-dot" aria-label="Absent">A</span></span>
+            <span class="entry present" data-status="present"><img class="attendance-badge" data-badge="present" alt="Present badge" /><span class="entry-subject">Signals and Systems <span class="x2">HR9</span></span><span class="status-dot" aria-label="Present">P</span></span>
+            <span class="entry absent" data-status="absent"><img class="attendance-badge" data-badge="absent" alt="Absent badge" /><span class="entry-subject">DTSP <span class="x2">HR12</span></span><span class="status-dot" aria-label="Absent">A</span></span>
+            <span class="entry present" data-status="present"><img class="attendance-badge" data-badge="present" alt="Present badge" /><span class="entry-subject">Wireless Communication <span class="x2">HR13</span></span><span class="status-dot" aria-label="Present">P</span></span>
+          </div>
+        </article>
         <article class="day" data-day>
           <div class="day-head"><div class="date"><time datetime="2026-10-22">22 Oct 2026</time></div><div class="day-total">0 present · 3 absent</div></div>
           <div class="entries">
